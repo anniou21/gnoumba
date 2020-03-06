@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: MyText
+  price: 1.5
+  amenities: MyText
+  description: MyText
+  short-description: MyText
+  location: MyText
+  availibility-date: 2020-03-06
+  availibility-status: false
+  users: one
+
+two:
+  type: MyText
+  price: 1.5
+  amenities: MyText
+  description: MyText
+  short-description: MyText
+  location: MyText
+  availibility-date: 2020-03-06
+  availibility-status: false
+  users: two
