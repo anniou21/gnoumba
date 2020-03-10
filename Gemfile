@@ -6,6 +6,13 @@ ruby '2.6.3'
 
 #my own gem
 gem 'devise'
+gem 'autoprefixer-rails'
+gem 'font-awesome-sass', '~> 5.6.1'
+gem 'sassc-rails'
+gem 'simple_form'
+gem 'webpacker'
+gem 'cloudinary', '~> 1.12.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.1'
 # Use sqlite3 as the database for Active Record
