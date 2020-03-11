@@ -6,13 +6,9 @@ ruby '2.6.3'
 
 #my own gem
 gem 'devise'
-gem 'autoprefixer-rails'
-gem 'font-awesome-sass', '~> 5.6.1'
-gem 'sassc-rails'
+gem 'pg'
 gem 'simple_form'
-gem 'webpacker'
-gem 'cloudinary', '~> 1.12.0'
-gem 'bootstrap', '~> 4.4', '>= 4.4.1'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.1'
@@ -32,7 +28,7 @@ gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
+#gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
