@@ -1,31 +1,114 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "logo_gnoumba-navbar.png" %>
-  <% end %>
+<!-- TWO CARD -->
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <%= link_to "Louer votre bien", "#", class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "Messages", "#", class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "Aides", "#", class: "nav-link" %>
-      </li>
-      <li class="nav-item dropdown">
-        <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <%= link_to "Action", "#", class: "dropdown-item" %>
-          <%= link_to "Another action", "#", class: "dropdown-item" %>
+<div class="container">
+  <h2 class="titletwocard">Trouver votre gnoumba</h2>
+  <p class="descriptiontwocard">+ 1000 annonces immobilières</p>
+  <div class="spacetwocard">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Louer un gnoumba</h5>
+            <p class="card-text">Trouver le bon locataire. Grâce à Gnoumba,
+                on s’occupe de diffuser vos annonces immobilières.</p>
+            <a href="#" class="btn btn-primary">Commencer</a>
+          </div>
         </div>
-      </li>
-    </ul>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Louer un gnoumba</h5>
+            <p class="card-text">Trouver le bon locataire. Grâce à Gnoumba,
+                on s’occupe de diffuser vos annonces immobilières.</p>
+            <a href="#" class="btn btn-primary">Commencer</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+<!-- FIN -->
+
+<!-- SYSTEME -->
+<div class="systemeblock">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6 col-lg-5">
+        <h2>Notre système sophistiqué travaille pour vous ! </h2>
+        <p class="lead"><i class="fas fa-check-circle"></i> Gnoumba, votre partenaire pour trouver un logement</p>
+        <p class="lead"><i class="fas fa-check-circle"></i> Une communauté grandissante de jours en jours</p>
+        <p class="lead"><i class="fas fa-check-circle"></i> Notre support technique réponds dans les meilleurs délais</p>
+        <a href="#" class="btn btn-primary">En savoir plus</a>
+      </div>
+      <div class="col-12 col-md-6 ml-md-auto mt-4 mt-md-0 ">
+        <%= image_tag "doodles/doodle-homepage.svg", class: "doodle" %>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIN -->
+
+
+<!-- ILS PARLENT DE NOUS -->
+<div class="parlentnous">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12">
+        <h2><strong>Ils parlent de nous</strong></h2>
+        <div class="mt-5 justify-content-center">
+          <%= image_tag "entreprises/le-figaro.svg", class:"ml-3 mr-3 mb-2 mt-2", height: 80 %>
+          <%= image_tag "entreprises/le-figaro.svg", class:"ml-3 mr-3 mb-2 mt-2", height: 80 %>
+          <%= image_tag "entreprises/le-figaro.svg", class:"ml-3 mr-3 mb-2 mt-2", height: 80 %>
+          <%= image_tag "entreprises/le-figaro.svg", class:"ml-3 mr-3 mb-2 mt-2", height: 80 %>
+          <%= image_tag "entreprises/le-figaro.svg", class:"ml-3 mr-3 mb-2 mt-2", height: 80 %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIN -->
+
+<!-- ETAPE -->
+<div class="etapes">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12">
+        <h2><strong>Comment ça marche ?</strong></h2>
+      </div>
+    </div>
+    <div class="row text-center justify-content-center mt-5">
+      <div class="col-12 col-md-4 col-lg-3 m-md-auto">
+        <%= image_tag "doodles/doodle-etape1.svg", class: "doodle-etape" %>
+        <h3>Etape 1</h3>
+        <p>Inscrivez-vous pour voir toutes les annonces immobilières à proximité de chez vous</p>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-3 m-md-auto pt-3 pt-md-0">
+        <%= image_tag "doodles/doodle-etape2.svg", class: "doodle-etape" %>
+        <h3>Etape 2</h3>
+        <p>Mettez en favoris les annonces qui vous plaisent et échanger avec le bailleur.</p>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-3 m-md-auto pt-3 pt-md-0">
+        <%= image_tag "doodles/doodle-etape3.svg", class: "doodle-etape" %>
+        <h3>Etape 3</h3>
+        <p>Faites-lui une offre, si ça match entre vous, commencez les démarches pour louer le bien.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIN -->
+
+<!-- CALL TO ACTION -->
+<div class="calltoaction fdb-viewport" style="background-image: url(imgs/hero/blue.svg);">
+  <div class="container align-items-center justify-content-center d-flex">
+    <div class="row justify-content-center text-center">
+      <div class="col-12 col-md-10 col-lg-8">
+        <h3>Gnoumba est une solution entre particulier à particulier</h3>
+        <p class="mt-5"><a href="https://www.froala.com" class="btn btn-outline-light">Louer mon bien</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIN -->

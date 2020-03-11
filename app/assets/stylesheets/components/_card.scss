@@ -1,0 +1,26 @@
+.spacetwocard {
+  height: 300px;
+  background-color: #F4F4F4;
+}
+
+.titletwocard {
+  margin-top: 50px;
+  color: $black;
+  font-size: 59px;
+  font-weight: bolder;
+}
+
+.descriptiontwocard {
+  margin-bottom: 50px;
+  color: $black;
+  font-size: 20px;
+}
+
+.card {
+  border-radius: 7px;
+  background-color: white;
+}
+
+.card-body {
+  height: 230px;
+}
