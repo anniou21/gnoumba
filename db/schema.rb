@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_06_134809) do
+ActiveRecord::Schema.define(version: 2020_03_13_111527) do
 
   create_table "contacters", force: :cascade do |t|
     t.integer "gnoumbaa_id"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2020_03_06_134809) do
   end
 
   create_table "gnoumbaas", force: :cascade do |t|
-    t.text "type"
+    t.text "propertytype"
     t.float "price"
     t.text "amenities"
     t.text "description"
@@ -28,10 +28,10 @@ ActiveRecord::Schema.define(version: 2020_03_06_134809) do
     t.text "location"
     t.date "availibilityDate"
     t.boolean "availibilityStatus"
-    t.integer "users_id"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["users_id"], name: "index_gnoumbaas_on_users_id"
+    t.index ["user_id"], name: "index_gnoumbaas_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -47,10 +47,9 @@ ActiveRecord::Schema.define(version: 2020_03_06_134809) do
     t.integer "phone"
     t.boolean "verified"
     t.date "birthdate"
-    t.integer "usertypes_id"
+    t.string "usertype"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-    t.index ["usertypes_id"], name: "index_users_on_usertypes_id"
   end
 
   create_table "usertypes", force: :cascade do |t|
