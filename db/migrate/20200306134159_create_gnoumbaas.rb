@@ -1,7 +1,7 @@
 class CreateGnoumbaas < ActiveRecord::Migration[5.2]
   def change
     create_table :gnoumbaas do |t|
-      t.text :type
+      t.text :propertytype
       t.float :price
       t.text :amenities
       t.text :description
@@ -9,7 +9,7 @@ class CreateGnoumbaas < ActiveRecord::Migration[5.2]
       t.text :location
       t.date :availibilityDate
       t.boolean :availibilityStatus
-      t.references :users, foreign_key: true
+      t.references :user, foreign_key: true
 
       t.timestamps
     end

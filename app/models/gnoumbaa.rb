@@ -1,5 +1,4 @@
 class Gnoumbaa < ApplicationRecord
-  belongs_to :users
-  validates :users, uniqueness: true
+  belongs_to :user
   validates :location, uniqueness: true
 end
