@@ -1,2 +1,27 @@
-<h1>Gnoumbaas#index</h1>
-<p>Find me in app/views/gnoumbaas/index.html.erb</p>
+<p>Gnoumbaas#index</p>
+<div class="barre">
+  <div class="container">
+    <div class="row">
+      <div class="col-9">
+          <button type="button" class="btn btn-ghost"><i class="fas fa-arrows-alt-v"></i> Filtre par</button>
+          <button type="button" class="btn btn-ghost"><i class="fas fa-coins"></i> Budget</button>
+          <button type="button" class="btn btn-ghost"><i class="fas fa-calendar-alt"></i> Disponibilité</button>
+          <button type="button" class="btn btn-ghost"><i class="fas fa-bed"></i> Type de bien</button>
+          <button type="button" class="btn btn-ghost"><i class="fas fa-user-circle"></i> Type de profil</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main-container">
+    <% @gnoumbaas.each do |gnoumbaa| %>
+    <div class="cards">
+      <%= image_tag "rooms/room.jpg", height: 300, width: 300 %>
+       <p><%= gnoumbaa.propertytype %></p>
+       <p><%= gnoumbaa.price %> €/mois</p>
+       <p><%= gnoumbaa.shortDescription %></p>
+       <p><%= gnoumbaa.location %></p>
+       <p><%= gnoumbaa.availibilityDate %></p>
+    </div>
+    <% end %>
+      <%= image_tag "rooms/map-paris.png", id:'map' %>
+</div>
