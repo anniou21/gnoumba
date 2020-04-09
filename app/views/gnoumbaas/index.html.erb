@@ -12,16 +12,29 @@
     </div>
   </div>
 </div>
-<div class="main-container">
-    <% @gnoumbaas.each do |gnoumbaa| %>
-    <div class="cards">
-      <%= image_tag "rooms/room.jpg", height: 300, width: 300 %>
-       <p><%= gnoumbaa.propertytype %></p>
-       <p><%= gnoumbaa.price %> €/mois</p>
-       <p><%= gnoumbaa.shortDescription %></p>
-       <p><%= gnoumbaa.location %></p>
-       <p><%= gnoumbaa.availibilityDate %></p>
+
+<!-- CSS GENERATOR -->
+<div class="parent">
+    <div class="div1">
+        <% @gnoumbaas.each do |gnoumbaa| %>
+            <%= link_to  gnoumbaa_path(gnoumbaa) do %>
+          <div class="card-trip">
+            <%= image_tag "rooms/room.jpg", height: 300, width: 300 %>
+            <div class="card-trip-infos">
+              <div>
+                <h2><%= gnoumbaa.user.name %></h2>
+                <p class="text-muted"><%= gnoumbaa.propertytype %></p>
+              </div>
+                <h2 class="card-trip-pricing"><%= gnoumbaa.price.to_i %> €/mois</h2>
+                <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+            </div>
+          </div>
+            <% end %>
+        <% end %>
     </div>
-    <% end %>
-      <%= image_tag "rooms/map-paris.png", id:'map' %>
+
+    <div class="div2">
+        <%= image_tag "rooms/map-paris.png", id:'map' %>
+    </div>
 </div>
+<!-- FIN -->
