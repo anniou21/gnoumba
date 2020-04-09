@@ -12,3 +12,17 @@
 .btn-ghost:hover {
   opacity: 1;
 }
+
+
+.btn-gnoumba {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #fe7800;
+  transition: background 0.3s ease;
+}
+
+.btn-gnoumba:hover {
+  background: #e56b00;
+  color: white;
+}

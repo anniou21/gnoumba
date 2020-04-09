@@ -1,31 +1,87 @@
-@media(max-width: 992px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media(max-width: 768px) {
-  .cards {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-
-.main-container {
-  display: flex;
-}
 
 #map {
   height: 100vh;
   position: sticky;
   top:0;
   background-color: red;
-}
-
-.cards {
-  display: grid;
-  flex-grow: 1;
-  background-color: yellow;
   margin: 14px;
 }
+
+
+.card-trip {
+  overflow: hidden;
+  background: white;
+  margin: 14px;
+  box-shadow:
+  0 2.3px 1.8px rgba(0, 0, 0, 0.012),
+  0 7.8px 6px rgba(0, 0, 0, 0.018),
+  0 35px 27px rgba(0, 0, 0, 0.03);
+  border-radius: 6px;
+  width: 75%;
+  flex-grow: 1;
+  margin-left: 50px;
+}
+
+.card-trip > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+
+}
+
+.card-trip-pricing {
+  font-weight: bolder;
+  color: #FE7800;
+}
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
+
+.card-trip-infos .short-description {
+  font-size: 14px;
+  color: black;
+  margin: 0;
+}
+
+// CSS GRID GENERATR //
+.parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 8px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+
+.div1 a {
+  text-decoration: none;
+  color: black;
+}
+
+// FIN CSS GRID GENERATOR //
