@@ -1,0 +1,23 @@
+.container-gauche {
+  h3, p, a, img {
+    padding: 10px;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 30px;
+  }
+  .fa-calendar, .fa-wifi, .fa-mountain, .fa-parking, .fa-seedling, .fa-dryer, .fa-clock {
+    font-size: 35px;
+    margin: 8px;
+  }
+}
+
+.fa-whatsapp, .fa-facebook-messenger, .fa-link {
+  font-size: 22px;
+  margin: 10px;
+}
