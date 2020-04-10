@@ -26,3 +26,15 @@
   background: #e56b00;
   color: white;
 }
+
+.btn-gnoumba-offer {
+  color: white;
+  padding: 5px 18px;
+  border-radius: 0px;
+  background: #fe7800;
+  transition: background 0.3s ease;
+    &:hover {
+      background: #e56b00;
+      color: white;
+  }
+}
