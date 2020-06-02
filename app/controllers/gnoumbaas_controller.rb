@@ -2,7 +2,16 @@ class GnoumbaasController < ApplicationController
   before_action :set_gnoumbaas, only: [:show, :update]
 
   def index
-    @gnoumbaas = Gnoumbaa.all
+      if params["search"]
+        @filter = params["search"]
+        @gnoumbaas = Gnoumbaa.all.global_search("#{@filter}")
+      else
+        @gnoumbaas = Gnoumbaa.all
+      end
+      respond_to do |format|
+        format.html
+        format.js
+      end
   end
 
   def show
