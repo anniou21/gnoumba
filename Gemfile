@@ -11,7 +11,7 @@ gem 'pg_search'
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
-gem 'bootstrap', '~> 4.2.1'
+gem 'bootstrap', '~> 4.3.1'
 gem 'webpacker', '~> 4.x'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
