@@ -1,0 +1,10 @@
+<% gnoumbaas.each do |gnoumbaa| %>
+  <h3><%= gnoumbaa.location %></h3>
+  <p><%= gnoumbaa.propertytype %></p>
+  <button class="btn-primary">
+    <%= gnoumbaa.price %>
+  </button>
+  <button class="btn-danger">
+    <%= gnoumbaa.description %>
+  </button>
+<% end %>
